@@ -148,9 +148,9 @@ public class UpdateStd extends javax.swing.JFrame {
 
         if (filecheck(uname)) {
             JOptionPane.showMessageDialog(this, "Username Detected!");
-            UpdateStudent x = new UpdateStudent(uname); //Passes the username to the next class para mabasa
-            x.setVisible(true);
-            this.dispose();
+            UpdateStudent x = new UpdateStudent(uname); //Passes the username to the next class para mabasa sa class which is tong updatestudent na ang iyang editon na username og password is katong username nga gi input sa updatestd na class which is kani na class
+            x.setVisible(true); //shows the window of the form
+            this.dispose(); //then closes after 
         } else {
             JOptionPane.showMessageDialog(this, "Invalid username", "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -173,7 +173,7 @@ public class UpdateStd extends javax.swing.JFrame {
 
                 //Check if the username match
                 if (username.equals(inputUsername)) {
-                    return true; //PASOK
+                    return true; //success login
                 }
             }
         } catch (IOException | ParseException e) {
